@@ -2,9 +2,23 @@ package org.example.Sorting;
 
 import java.util.Arrays;
 
+/*
+* Bubble Sort
+* Each looping process the largest element will go to the end
+* On first looping process first largest element will go to the end of array
+* on second looping process second-largest element will go the end of array
+* on (n-1)th looping process least large element will go to the beginning part of array
+* nth looping is not required as all the elements are sorted in the looping process before/on (n-1)th looping
+* */
+
 public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = new int[]{1,5,3,2,4};
+        bubbleSort(arr);
+
+    }
+
+    private static void bubbleSort(int[] arr) {
         boolean nothingSwapped=true;
 
         for (int i = 0; i < arr.length; i++) {
@@ -31,6 +45,5 @@ public class BubbleSort {
             System.out.println("After : "+Arrays.toString(arr));
             System.out.println();
         }
-
     }
 }

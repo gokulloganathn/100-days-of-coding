@@ -11,7 +11,10 @@ import java.util.Arrays;
 public class SelectionSort {
     public static void main(String[] args) {
         int[] arr = {5, 3, 25, 2, 1};
+        selectionSort(arr);
+    }
 
+    private static void selectionSort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             int lastElemIndex = arr.length - i - 1;
             int largestElemIndex = findLargestElemIndex(arr, 0, lastElemIndex);
