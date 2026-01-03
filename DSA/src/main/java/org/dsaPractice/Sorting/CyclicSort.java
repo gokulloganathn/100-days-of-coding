@@ -30,14 +30,6 @@ public class CyclicSort {
         }
     }
 
-    public static void applyCyclicSortInON2(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            while (arr[i] - 1 != i) {
-                swap(arr, i, arr[i] - 1);
-            }
-        }
-    }
-
     public static void swap(int[] arr, int srcElem, int trgtElem) {
         int swap = arr[trgtElem];
         arr[trgtElem] = arr[srcElem];
