@@ -1,4 +1,4 @@
-package org.dsaPractice.Sorting;
+package org.dsaPractice.Sorting.CyclicSort.problems;
 
 //https://leetcode.com/problems/missing-number/
 class MissingNumber {

@@ -1,4 +1,4 @@
-package org.dsaPractice.Sorting;
+package org.dsaPractice.Sorting.CyclicSort;
 
 import java.util.Arrays;
 
