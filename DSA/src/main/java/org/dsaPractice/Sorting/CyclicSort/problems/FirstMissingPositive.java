@@ -13,6 +13,7 @@ class FirstMissingPositive {
 
         while (i < nums.length) {
             var correctIndex = nums[i] - 1;
+            //ignoring the negative elements and considering the num element with value lessOrEqual to the length of arrray
             if(nums[i] > 0 && nums[i] <= nums.length && nums[i] != nums[correctIndex]) {
                 swap(nums, i, correctIndex);
             }else{
@@ -20,11 +21,12 @@ class FirstMissingPositive {
             }
         }
 
+        //usual scenario - finding which is the smallest positive number after 0
         for (int j = 0; j < nums.length; j++) {
             if(nums[j] != j+1) return j+1;
         }
 
-        return nums.length + 1;
+        return nums.length + 1;  //edge case : when no number is missing return the next number after the nth element of n elements array
     }
 
     public static void swap(int[] nums, int srcElem, int trgtElem) {
